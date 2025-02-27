@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: whitesmoke;
+    color: black;
+    transition: transform 0.6s, color 0.6s, background-color 0.5s;
+
+}
+
+body.dark-mode {
+    background-color: rgb(41, 40, 40);
+    color: white;
+    transition: transform 0.6s, color 0.6s, background-color 0.5s;
+}
+
+.botao1 {
+    display: flex;
+    justify-content: center;
+}
+
+.button-dark {
+    margin-top: 15px;
+    justify-content: space-between;
+    background-color: rgb(255, 254, 254);
+    padding: 12px;
+    font-size: 12px;
+    border-radius: 8px;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: transform 0.4s, box-shadow 0.3s;
+}
+
+.button-dark:hover {
+    background-color: #ececec;
+    box-shadow: 3px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+h1,
+th,
+td {
+    font-family: "Roboto", serif;
+    font-style: normal;
+}
+
+th,
+td {
+    font-size: 20px;
+}
+
+header {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+
+}
+
+header h1 {
+    margin-top: 12px;
+    font-size: 40px;
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.logo {
+    height: 72px;
+    margin-right: 16px;
+}
+
+form {
+
+    display: flex;
+    max-width: 640px;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+
+
+form input {
+    font-size: 24px;
+    background-color: #fff;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    border-bottom: 2px solid black;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+form input:hover {
+    box-shadow: 2px 6px 10px rgb(0, 0, 0, 0.2);
+}
+
+form .nome {
+    width: 350px;
+    height: 28px;
+}
+
+form .nota {
+    height: 28px;
+    width: 130px;
+
+}
+
+form button {
+    background-color: rgb(41, 233, 41);
+    color: white;
+    border: none;
+    height: 30px;
+    width: 105px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+form button:hover {
+    background-color: rgb(12, 189, 12);
+    box-shadow: 2px 6px 10px rgb(0, 0, 0, 0.2);
+}
+
+table th {
+    border-bottom: 2px solid rgb(37, 37, 37);
+    justify-content: space-between;
+    padding: 16px;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+
+}
+
+table {
+    width: 100%;
+}
+
+table td {
+    padding: 16px 0;
+    text-align: center;
+    font-size: 18px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+table td img {
+    height: 36px;
+}
+
+
+.resultado {
+    padding: 8px;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 3px;
+}
+
+
+.aprovado {
+    background-color: rgb(41, 233, 41);
+}
+
+.reprovado {
+    background-color: red;
+}
+
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
