@@ -40,7 +40,7 @@ function adicionaLinha() {
     }
 
     inputNomeAtividade.value = '';
-    inputNotaAtividade.value.toFixed(1) = '';
+    inputNotaAtividade.value = '';
 }
 
 function atualizaTabela() {
