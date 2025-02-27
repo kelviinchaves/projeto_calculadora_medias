@@ -21,7 +21,7 @@ form.addEventListener('submit', function (e) {
 
 function adicionaLinha() {
     const inputNomeAtividade = document.getElementById('nome');
-    const inputNotaAtividade = document.getElementById('nota');
+    const inputNotaAtividade = document.getElementById('nota').toFixed(2);
 
     if (atividades.includes(inputNomeAtividade.value)) {
         alert(`A atividade: ${inputNomeAtividade.value} já foi inserida`);
